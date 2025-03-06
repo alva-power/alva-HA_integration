@@ -2,7 +2,7 @@
 
 DOMAIN = "alva_integration"
 DEFAULT_NAME = "Alva"
-DEFAULT_SCAN_INTERVAL = 60  # seconds
+DEFAULT_SCAN_INTERVAL = 2  # seconds
 
 # Configuration
 CONF_DEVICE_ID = "device_id"
