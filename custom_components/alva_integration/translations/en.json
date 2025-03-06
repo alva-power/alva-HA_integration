@@ -1,0 +1,21 @@
+{
+    "config": {
+      "step": {
+        "user": {
+          "title": "Connect to Alva",
+          "description": "Set up your Alva integration",
+          "data": {
+            "device_id": "Device ID"
+          }
+        }
+      },
+      "error": {
+        "cannot_connect": "Failed to connect",
+        "invalid_response": "Invalid response from API",
+        "unknown": "Unexpected error"
+      },
+      "abort": {
+        "already_configured": "Device is already configured"
+      }
+    }
+  }

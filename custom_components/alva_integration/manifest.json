@@ -4,8 +4,10 @@
     "documentation": "https://github.com/alva-power/alva-HA_integration",
     "dependencies": [],
     "codeowners": ["@EyrisCrafts"],
-    "requirements": [],
+    "requirements": ["requests>=2.25.1"],
     "iot_class": "cloud_polling",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "config_flow": true
+
   }
   
