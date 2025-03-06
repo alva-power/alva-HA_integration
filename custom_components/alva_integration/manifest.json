@@ -1,6 +1,6 @@
 {
-    "domain": "esp32_rssi",
-    "name": "ESP32 RSSI Sensor",
+    "domain": "alva_integration",
+    "name": "Alva Integration",
     "documentation": "https://github.com/alva-power/alva-HA_integration",
     "dependencies": [],
     "codeowners": ["@EyrisCrafts"],

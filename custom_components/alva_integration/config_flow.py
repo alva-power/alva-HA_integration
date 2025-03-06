@@ -1,20 +1,18 @@
-"""Config flow for ESP32 RSSI integration."""
-import voluptuous as vol
-
 from homeassistant import config_entries
+import voluptuous as vol
 import homeassistant.helpers.config_validation as cv
 
 from .const import DOMAIN, CONF_DEVICE_ID
 
-class ESP32RSSIConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-    """Handle a config flow for ESP32 RSSI."""
+class AlvaIntegrationConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
+    """Handle the config flow for Alva Integration."""
 
     async def async_step_user(self, user_input=None):
         """Handle the initial step."""
         errors = {}
 
         if user_input is not None:
-            return self.async_create_entry(title=f"ESP32 {user_input[CONF_DEVICE_ID]}", data=user_input)
+            return self.async_create_entry(title=f"Alva Device {user_input[CONF_DEVICE_ID]}", data=user_input)
 
         schema = vol.Schema({
             vol.Required(CONF_DEVICE_ID): cv.string,

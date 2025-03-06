@@ -11,17 +11,17 @@ from .const import DOMAIN, CONF_DEVICE_ID, BASE_URL
 _LOGGER = logging.getLogger(__name__)
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_entities):
-    """Set up the ESP32 RSSI sensor from a config entry."""
+    """Set up the Alva sensor from a config entry."""
     device_id = entry.data[CONF_DEVICE_ID]
     resource = BASE_URL.format(device_id)
-    async_add_entities([ESP32RssiSensor(resource)], True)
+    async_add_entities([AlvaSensor(resource)], True)
 
-class ESP32RssiSensor(SensorEntity):
-    """Representation of an ESP32 RSSI sensor."""
+class AlvaSensor(SensorEntity):
+    """Representation of an Alva RSSI sensor."""
 
     def __init__(self, resource):
         """Initialize the sensor."""
-        self._name = "ESP32 RSSI"
+        self._name = "Alva RSSI"
         self._resource = resource
         self._state = None
         self._attr_native_unit_of_measurement = UnitOfElectricPotential.VOLT
