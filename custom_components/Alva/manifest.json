@@ -1,0 +1,11 @@
+{
+    "domain": "esp32_rssi",
+    "name": "ESP32 RSSI Sensor",
+    "documentation": "https://github.com/alva-power/alva-HA_integration",
+    "dependencies": [],
+    "codeowners": ["@EyrisCrafts"],
+    "requirements": [],
+    "iot_class": "cloud_polling",
+    "version": "1.0.0"
+  }
+  
